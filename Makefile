@@ -1,15 +1,15 @@
 BUILDDIR=$(shell pwd)/bin/lib
 IMPORT_PATH= \
-	github.com/net-byte/vtun/mobile/config \
-	github.com/net-byte/vtun/mobile/dtlsclient \
-	github.com/net-byte/vtun/mobile/h1client \
-	github.com/net-byte/vtun/mobile/h2client \
-	github.com/net-byte/vtun/mobile/kcpclient \
-	github.com/net-byte/vtun/mobile/quicclient \
-	github.com/net-byte/vtun/mobile/tcpclient \
-	github.com/net-byte/vtun/mobile/tlsclient \
-	github.com/net-byte/vtun/mobile/utlsclient \
-	github.com/net-byte/vtun/mobile/wsclient
+	github.com/go-vtun/vtun/mobile/config \
+	github.com/go-vtun/vtun/mobile/dtlsclient \
+	github.com/go-vtun/vtun/mobile/h1client \
+	github.com/go-vtun/vtun/mobile/h2client \
+	github.com/go-vtun/vtun/mobile/kcpclient \
+	github.com/go-vtun/vtun/mobile/quicclient \
+	github.com/go-vtun/vtun/mobile/tcpclient \
+	github.com/go-vtun/vtun/mobile/tlsclient \
+	github.com/go-vtun/vtun/mobile/utlsclient \
+	github.com/go-vtun/vtun/mobile/wsclient
 
 all: ios android
 

@@ -14,7 +14,7 @@ __ __ | |_   _  _   _ _
  \_/   \__|  \_,_| |_||_|
 						 
 A simple VPN written in Go.
-https://github.com/net-byte/vtun
+https://github.com/go-vtun/vtun
 `
 )
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 RELEASE_BIN_DIR='./bin/'
 RELEASE_NAME='vtun'
-PACKAGE_NAME='github.com/net-byte/vtun/common'
+PACKAGE_NAME='github.com/go-vtun/vtun/common'
 
 # create dir
 function create_dir() {
