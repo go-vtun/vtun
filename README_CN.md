@@ -4,7 +4,6 @@
 
 [EN](https://github.com/go-vtun/vtun/blob/main/README.md) | [中文](https://github.com/go-vtun/vtun/blob/main/README_CN.md)
 
-[![Travis](https://travis-ci.com/go-vtun/vtun.svg?branch=main)](https://github.com/go-vtun/vtun)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-vtun/vtun)](https://goreportcard.com/report/github.com/go-vtun/vtun)
 ![image](https://img.shields.io/badge/License-MIT-orange)
 ![image](https://img.shields.io/badge/License-Anti--996-red)
