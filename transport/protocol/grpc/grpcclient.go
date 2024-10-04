@@ -6,18 +6,18 @@ import (
 	"log"
 	"time"
 
-	"github.com/net-byte/vtun/transport/protocol/grpc/proto"
+	"github.com/go-vtun/vtun/transport/protocol/grpc/proto"
 
 	"github.com/golang/snappy"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/keepalive"
 
-	"github.com/net-byte/vtun/common/cache"
-	"github.com/net-byte/vtun/common/cipher"
-	"github.com/net-byte/vtun/common/config"
-	"github.com/net-byte/vtun/common/counter"
-	"github.com/net-byte/vtun/common/netutil"
+	"github.com/go-vtun/vtun/common/cache"
+	"github.com/go-vtun/vtun/common/cipher"
+	"github.com/go-vtun/vtun/common/config"
+	"github.com/go-vtun/vtun/common/counter"
+	"github.com/go-vtun/vtun/common/netutil"
 	"github.com/net-byte/water"
 )
 
