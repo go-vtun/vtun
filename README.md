@@ -2,13 +2,13 @@
 
 A simple VPN written in Go.
 
-[EN](https://github.com/net-byte/vtun/blob/master/README.md) | [中文](https://github.com/net-byte/vtun/blob/master/README_CN.md)
+[EN](https://github.com/go-vtun/vtun/blob/main/README.md) | [中文](https://github.com/go-vtun/vtun/blob/main/README_CN.md)
 
-[![Travis](https://travis-ci.com/net-byte/vtun.svg?branch=master)](https://github.com/net-byte/vtun)
-[![Go Report Card](https://goreportcard.com/badge/github.com/net-byte/vtun)](https://goreportcard.com/report/github.com/net-byte/vtun)
+[![Travis](https://travis-ci.com/go-vtun/vtun.svg?branch=main)](https://github.com/go-vtun/vtun)
+[![Go Report Card](https://goreportcard.com/badge/github.com/go-vtun/vtun)](https://goreportcard.com/report/github.com/go-vtun/vtun)
 ![image](https://img.shields.io/badge/License-MIT-orange)
 ![image](https://img.shields.io/badge/License-Anti--996-red)
-![image](https://img.shields.io/github/downloads/net-byte/vtun/total.svg)
+![image](https://img.shields.io/github/downloads/go-vtun/vtun/total.svg)
 
 # Features
 * VPN over udp
@@ -133,27 +133,7 @@ sudo ./vtun-linux-amd64 -S -l :3001 -c 172.16.0.1/24 -k 123456
   # Forward everything
   iptables -A FORWARD -j ACCEPT
 
-```
 
-## Docker
-[docker image](https://hub.docker.com/r/netbyte/vtun)
-
-### Run client
-```
-docker run  -d --privileged --restart=always --net=host --name vtun-client \
-netbyte/vtun -s server-addr:3001 -c 172.16.0.10/24 -k 123456
-```
-
-### Run client with global mode
-```
-docker run  -d --privileged --restart=always --net=host --name vtun-client \
-netbyte/vtun -s server-addr:3001 -c 172.16.0.10/24 -k 123456 -g
-```
-
-### Run server
-```
-docker run  -d --privileged --restart=always --net=host --name vtun-server \
-netbyte/vtun -S -l :3001 -c 172.16.0.1/24 -k 123456
 ```
 
 ## How to build mobile libs
@@ -176,18 +156,13 @@ make android
 
 ## Mobile client
 
-### 1. [vTunnel](https://github.com/net-byte/vTunnel)
-<p>
-<a href="https://play.google.com/store/apps/details?id=com.netbyte.vtunnel"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="100"></a>
-</p>
-
-### 2. GoFly VPN
+### 1. GoFly VPN
 <p>
 <a href="https://play.google.com/store/apps/details?id=app.fjj.gofly"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="100"></a>
 </p>
 
 # License
-[The MIT License (MIT)](https://raw.githubusercontent.com/net-byte/vtun/master/LICENSE)
+[The MIT License (MIT)](https://raw.githubusercontent.com/go-vtun/vtun/main/LICENSE)
 
 # Acknowledgments
 Thanks [JetBrains](https://www.jetbrains.com/community/opensource/#support) for providing licenses.
