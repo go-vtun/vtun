@@ -16,8 +16,8 @@ import (
 
 	"github.com/gobwas/ws"
 	"github.com/net-byte/go-gateway"
-	"github.com/net-byte/vtun/common/config"
-	"github.com/net-byte/vtun/common/counter"
+	"github.com/go-vtun/vtun/common/config"
+	"github.com/go-vtun/vtun/common/counter"
 )
 
 // ConnectServer connects to the server with the given address.

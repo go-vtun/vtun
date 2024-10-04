@@ -5,7 +5,7 @@ import (
 	"crypto/md5"
 	"errors"
 	"fmt"
-	"github.com/net-byte/vtun/common/config"
+	"github.com/go-vtun/vtun/common/config"
 	"net"
 )
 

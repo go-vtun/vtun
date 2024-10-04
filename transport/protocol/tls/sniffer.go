@@ -7,7 +7,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/net-byte/vtun/common/netutil"
+	"github.com/go-vtun/vtun/common/netutil"
 )
 
 type SniffConn struct {

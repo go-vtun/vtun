@@ -2,14 +2,14 @@ package main
 
 import (
 	"flag"
-	"github.com/net-byte/vtun/common"
+	"github.com/go-vtun/vtun/common"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 
-	"github.com/net-byte/vtun/app"
-	"github.com/net-byte/vtun/common/config"
+	"github.com/go-vtun/vtun/app"
+	"github.com/go-vtun/vtun/common/config"
 )
 
 var cfg = config.Config{}

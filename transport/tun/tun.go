@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/net-byte/vtun/common/config"
-	"github.com/net-byte/vtun/common/netutil"
+	"github.com/go-vtun/vtun/common/config"
+	"github.com/go-vtun/vtun/common/netutil"
 	"github.com/net-byte/water"
 )
 

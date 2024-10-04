@@ -2,9 +2,9 @@ package h1client
 
 import (
 	"context"
-	"github.com/net-byte/vtun/common/x/xchan"
-	kc "github.com/net-byte/vtun/mobile/config"
-	"github.com/net-byte/vtun/transport/protocol/h1"
+	"github.com/go-vtun/vtun/common/x/xchan"
+	kc "github.com/go-vtun/vtun/mobile/config"
+	"github.com/go-vtun/vtun/transport/protocol/h1"
 )
 
 var _ctx context.Context

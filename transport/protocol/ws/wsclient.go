@@ -2,7 +2,7 @@ package ws
 
 import (
 	"context"
-	"github.com/net-byte/vtun/common/x/xtun"
+	"github.com/go-vtun/vtun/common/x/xtun"
 	"log"
 	"net"
 	"time"
@@ -10,11 +10,11 @@ import (
 	"github.com/gobwas/ws"
 	"github.com/gobwas/ws/wsutil"
 	"github.com/golang/snappy"
-	"github.com/net-byte/vtun/common/cache"
-	"github.com/net-byte/vtun/common/cipher"
-	"github.com/net-byte/vtun/common/config"
-	"github.com/net-byte/vtun/common/counter"
-	"github.com/net-byte/vtun/common/netutil"
+	"github.com/go-vtun/vtun/common/cache"
+	"github.com/go-vtun/vtun/common/cipher"
+	"github.com/go-vtun/vtun/common/config"
+	"github.com/go-vtun/vtun/common/counter"
+	"github.com/go-vtun/vtun/common/netutil"
 	"github.com/net-byte/water"
 )
 

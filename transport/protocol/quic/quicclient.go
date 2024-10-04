@@ -10,13 +10,13 @@ import (
 	"github.com/net-byte/water"
 	"github.com/quic-go/quic-go"
 
-	"github.com/net-byte/vtun/common/cache"
-	"github.com/net-byte/vtun/common/cipher"
-	"github.com/net-byte/vtun/common/config"
-	"github.com/net-byte/vtun/common/counter"
-	"github.com/net-byte/vtun/common/netutil"
-	"github.com/net-byte/vtun/common/x/xproto"
-	"github.com/net-byte/vtun/common/x/xtun"
+	"github.com/go-vtun/vtun/common/cache"
+	"github.com/go-vtun/vtun/common/cipher"
+	"github.com/go-vtun/vtun/common/config"
+	"github.com/go-vtun/vtun/common/counter"
+	"github.com/go-vtun/vtun/common/netutil"
+	"github.com/go-vtun/vtun/common/x/xproto"
+	"github.com/go-vtun/vtun/common/x/xtun"
 )
 
 const ConnTag = "stream"

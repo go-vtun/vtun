@@ -1,4 +1,4 @@
-module github.com/net-byte/vtun
+module github.com/go-vtun/vtun
 
 go 1.23
 

@@ -2,7 +2,7 @@ package h1
 
 import (
 	"crypto/tls"
-	"github.com/net-byte/vtun/common/config"
+	"github.com/go-vtun/vtun/common/config"
 	"net"
 	"net/http"
 	"time"

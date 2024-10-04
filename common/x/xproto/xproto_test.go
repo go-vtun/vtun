@@ -2,7 +2,7 @@ package xproto
 
 import (
 	"encoding/hex"
-	"github.com/net-byte/vtun/common/config"
+	"github.com/go-vtun/vtun/common/config"
 	"testing"
 )
 

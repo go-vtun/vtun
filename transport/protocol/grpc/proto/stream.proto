@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package proto;
-option go_package = "github.com/net-byte/vtun/grpc/proto";
+option go_package = "github.com/go-vtun/vtun/grpc/proto";
 
 message PacketData {
   bytes data = 1;
