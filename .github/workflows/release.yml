@@ -7,9 +7,6 @@ on:
       - 'v*'
   workflow_dispatch:
 
-env:
-  PATH: $GOPATH/bin:$PATH
-
 permissions:
   contents: write
   # packages: write
@@ -23,4 +20,4 @@ jobs:
         with:
           fetch-depth: 0
       - run: git fetch --force --tags
-      - run: go install golang.org/x/mobile/cmd/gomobile@latest && env && gomobile init && make all
+      - run: bash bash.sh
