@@ -8,5 +8,5 @@ export GOPATH=$GITHUB_WORKSPACE/golang
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 go install golang.org/x/mobile/cmd/gomobile@latest
 gomobile init
-make all
+make android
 env
