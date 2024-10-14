@@ -20,4 +20,4 @@ jobs:
         with:
           fetch-depth: 0
       - run: git fetch --force --tags
-      - run: go install golang.org/x/mobile/cmd/gomobile@latest && gomobile init && make all && env
+      - run: go install golang.org/x/mobile/cmd/gomobile@latest && env && gomobile init && make all
