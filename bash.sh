@@ -11,3 +11,4 @@ gomobile init
 go get golang.org/x/mobile/bind
 make android
 env
+ls
