@@ -23,16 +23,16 @@ mkdir -p $REPOROOT/buildoutputs
 cd $REPOROOT/
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://proxy.golang.org,direct
-export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7a-linux-androideabi28
-export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7a-linux-androideabi28
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi28-clang
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi28-clang++
 export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
 export GOARCH=arm
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)
 go clean -cache
-export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-linux-android28
-export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-linux-android28
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android28-clang
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android28-clang++
 export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
@@ -115,7 +115,22 @@ export GOARCH=mips64le
 export GOMIPS=hardfloat
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)_$(go env GOMIPS)
 go clean -cache
-gomobile bind -o $REPOROOT/buildoutputs/libvtun.aar -a -v -x -androidapi 21 -ldflags '-w' -target=android github.com/go-vtun/vtun/mobile/config github.com/go-vtun/vtun/mobile/dtlsclient github.com/go-vtun/vtun/mobile/h1client github.com/go-vtun/vtun/mobile/h2client github.com/go-vtun/vtun/mobile/kcpclient github.com/go-vtun/vtun/mobile/quicclient github.com/go-vtun/vtun/mobile/tcpclient github.com/go-vtun/vtun/mobile/tlsclient github.com/go-vtun/vtun/mobile/utlsclient github.com/go-vtun/vtun/mobile/wsclient
+unset CC
+unset CXX
+unset AR
+unset CGO_ENABLED
+unset GOOS
+unset GOARCH
+gomobile bind -o $REPOROOT/buildoutputs/libvtun.aar -a -v -x -androidapi 21 -ldflags '-w' -target=android github.com/go-vtun/vtun/mobile/config \
+	github.com/go-vtun/vtun/mobile/dtlsclient \
+	github.com/go-vtun/vtun/mobile/h1client \
+	github.com/go-vtun/vtun/mobile/h2client \
+	github.com/go-vtun/vtun/mobile/kcpclient \
+	github.com/go-vtun/vtun/mobile/quicclient \
+	github.com/go-vtun/vtun/mobile/tcpclient \
+	github.com/go-vtun/vtun/mobile/tlsclient \
+	github.com/go-vtun/vtun/mobile/utlsclient \
+	github.com/go-vtun/vtun/mobile/wsclient
 gomobile clean
 echo "Build Done !"
 echo "::set-output name=buildoutputs::$REPOROOT/buildoutputs"
