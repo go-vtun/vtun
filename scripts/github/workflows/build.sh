@@ -5,7 +5,6 @@ export LD_LIBRARY_PATH=$REPOROOT:$LD_LIBRARY_PATH
 export PATH=$REPOROOT:$PATH
 export TZ=Asia/Shanghai
 sudo apt update -y
-sudo apt upgrade -y
 sudo apt autoremove -y
 sudo apt install bash wget curl unzip zip tar busybox vim nano git git-lfs qemu-system mingw-w64 miredo miredo-server ntp -y
 sudo ntpdate pool.ntp.org
@@ -32,25 +31,25 @@ export GOOS=android
 export GOARCH=arm
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)
 go clean -cache
-export CC=aarch64-linux-android-gcc
-export CXX=aarch64-linux-android-g++
-export AR=aarch64-linux-android-ar
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-linux-android28
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-linux-android28
+export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
 export GOARCH=arm64
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)
 go clean -cache
-export CC=i686-linux-android-gcc
-export CXX=i686-linux-android-g++
-export AR=i686-linux-android-ar
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-linux-android28
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-linux-android28
+export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
 export GOARCH=386
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)
 go clean -cache
-export CC=x86_64-linux-android-gcc
-export CXX=x86_64-linux-android-g++
-export AR=x86_64-linux-android-ar
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-linux-android28
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-linux-android28
+export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
 export GOARCH=amd64
