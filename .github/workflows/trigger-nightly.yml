@@ -47,7 +47,7 @@ jobs:
           MAJOR_VERSION=`echo $DESCRIBE | awk '{split($0,a,"."); print a[1]}'`
           MINOR_VERSION=`echo $DESCRIBE | awk '{split($0,a,"."); print a[2]}'`
           # MINOR_VERSION="$((${MINOR_VERSION} + 1))"
-          TAG="${MAJOR_VERSION}.${MINOR_VERSION}.0-nightly.$(date +'%Y%m%d')"
+          TAG="${MAJOR_VERSION}.${MINOR_VERSION}.0.nightly.$(date +'%Y%m%d')"
           git tag -a $TAG -m "$TAG: nightly build"
           git push origin $TAG
       - name: 'Clean up nightly releases'

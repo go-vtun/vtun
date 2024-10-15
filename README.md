@@ -142,6 +142,7 @@ sudo ./vtun-linux-amd64 -S -l :3001 -c 172.16.0.1/24 -k 123456
 ```
 go install golang.org/x/mobile/cmd/gomobile@latest
 gomobile init
+go get golang.org/x/mobile/bind
 ```
 
 ### 2. install android [ndk](https://developer.android.com/studio/projects/install-ndk)

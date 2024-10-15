@@ -38,16 +38,16 @@ type Config struct {
 type nativeConfig Config
 
 var DefaultConfig = nativeConfig{
-	DeviceName:                "",
+	DeviceName:                "vtun",
 	LocalAddr:                 ":3000",
 	ServerAddr:                ":3001",
 	ServerIP:                  "172.16.0.1",
 	ServerIPv6:                "fced:9999::1",
 	CIDR:                      "172.16.0.10/24",
 	CIDRv6:                    "fced:9999::9999/64",
-	Key:                       "freedom@2023",
-	Protocol:                  "udp",
-	Path:                      "/freedom",
+	Key:                       "123456",
+	Protocol:                  "ws",
+	Path:                      "/ws",
 	ServerMode:                false,
 	GlobalMode:                false,
 	Obfs:                      false,
