@@ -39,16 +39,16 @@ export GOOS=android
 export GOARCH=arm64
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)
 go clean -cache
-export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-linux-android28
-export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-linux-android28
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android28-clang
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android28-clang++
 export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
 export GOARCH=386
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)
 go clean -cache
-export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-linux-android28
-export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-linux-android28
+export CC=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android28-clang
+export CXX=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android28-clang++
 export AR=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 export CGO_ENABLED=1
 export GOOS=android
