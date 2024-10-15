@@ -24,9 +24,6 @@ mkdir -p $REPOROOT/buildoutputs
 cd $REPOROOT/
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://proxy.golang.org,direct
-export CC=arm-linux-androideabi-gcc
-export CXX=arm-linux-androideabi-g++
-export AR=arm-linux-androideabi-ar
 export CGO_ENABLED=1
 export GOOS=android
 export GOARCH=arm
@@ -116,7 +113,7 @@ export GOARCH=mips64le
 export GOMIPS=hardfloat
 go build -o $REPOROOT/buildoutputs/vtun_$(go env GOOS)_$(go env GOARCH)_$(go env GOMIPS)
 go clean -cache
-IMPORT_PATH= \
+export IMPORT_PATH= \
 	github.com/go-vtun/vtun/mobile/config \
 	github.com/go-vtun/vtun/mobile/dtlsclient \
 	github.com/go-vtun/vtun/mobile/h1client \
