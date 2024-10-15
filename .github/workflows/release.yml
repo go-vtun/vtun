@@ -20,12 +20,14 @@ jobs:
         with:
           fetch-depth: 0
       - run: git fetch --force --tags
-      - run: bash scripts/github/workflows/build.sh
+      - name: Build
+        id: build
+        run: bash scripts/github/workflows/build.sh
 
-      - name: Upload Gost To Artifact
+      - name: Upload To Artifact
         uses: actions/upload-artifact@v4
         if: steps.build.outputs.status == 'success' && !cancelled()
         with:
-          name: gost
-          path: ${{ steps.build.outputs.buildout }}/*
+          name: vtun
+          path: ${{ steps.build.outputs.buildoutputs }}/*
       
