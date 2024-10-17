@@ -10,7 +10,7 @@ require (
 	github.com/net-byte/water v0.0.9
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pion/dtls/v2 v2.2.12
-	github.com/quic-go/quic-go v0.47.0
+	github.com/quic-go/quic-go v0.48.0
 	github.com/refraction-networking/utls v1.6.7
 	github.com/stretchr/testify v1.9.0
 	github.com/xtaci/kcp-go v5.4.20+incompatible
