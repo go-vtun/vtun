@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/net/interfaces"
+	"tailscale.com/net/netmon"
 
 	"github.com/gobwas/ws"
 	"github.com/net-byte/go-gateway"
@@ -288,5 +288,5 @@ func PrintStats(enableVerbose bool, serverMode bool) {
 }
 
 func DefaultRouteInterface() (string, error) {
-	return interfaces.DefaultRouteInterface()
+	return netmon.DefaultRouteInterface()
 }
