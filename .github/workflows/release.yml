@@ -5,7 +5,6 @@ on:
     # run only against tags
     tags:
       - 'v*'
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -43,7 +42,7 @@ jobs:
 
       - name: Delete workflow runs
         id: workflow
-        uses: GitRML/delete-workflow-runs@main
+        uses: Mattraks/delete-workflow-runs@v2
         with:
           retain_days: 1
           keep_minimum_runs: 1
