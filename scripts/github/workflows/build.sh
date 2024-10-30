@@ -133,8 +133,8 @@ gomobile bind -o $REPOROOT/buildoutputs/libvtun.aar -a -v -x -androidapi 21 -ldf
 	github.com/go-vtun/vtun/mobile/wsclient
 gomobile clean
 echo "Build Done !"
-echo "::set-output name=buildoutputs::$REPOROOT/buildoutputs"
-echo "::set-output name=gitsha::$(cd $REPOROOT/ && git rev-parse HEAD)"
-echo "::set-output name=gitshashort::$(cd $REPOROOT/ && git rev-parse --short HEAD)"
-echo "::set-output name=status::success"
+echo "buildoutputs=$REPOROOT/buildoutputs" >> $GITHUB_OUTPUT
+echo "gitsha=$(cd $REPOROOT/ && git rev-parse HEAD)" >> $GITHUB_OUTPUT
+echo "gitshashort=$(cd $REPOROOT/ && git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+echo "status=success" >> $GITHUB_OUTPUT
 env

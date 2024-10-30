@@ -3,6 +3,7 @@
     "server_mode": true,
     "local_addr": ":3002",
     "cidr": "172.16.0.1/24",
+    "cidr_ipv6": "fced:9999::9999/64",
     "key": "123456",
     "protocol": "ws"
 }

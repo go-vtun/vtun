@@ -3,7 +3,7 @@ package common
 import "log"
 
 var (
-	Version   = "v1.8.1"
+	Version   = "v1.8.0"
 	GitHash   = ""
 	BuildTime = ""
 	GoVersion = ""

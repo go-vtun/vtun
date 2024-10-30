@@ -25,9 +25,28 @@ jobs:
         run: bash scripts/github/workflows/build.sh
 
       - name: Upload To Artifact
+        id: artifact
         uses: actions/upload-artifact@v4
         if: steps.build.outputs.status == 'success' && !cancelled()
         with:
           name: vtun
           path: ${{ steps.build.outputs.buildoutputs }}/*
-      
+
+      - name: Upload To Release
+        id: release
+        uses: softprops/action-gh-release@v2
+        if: steps.build.outputs.status == 'success' && !cancelled()
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          body_path: ${{ github.ref_name }}
+          files: ${{ steps.build.outputs.buildoutputs }}/*
+
+      - name: Delete workflow runs
+        id: workflow
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 1
+
