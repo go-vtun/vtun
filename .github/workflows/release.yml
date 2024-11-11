@@ -9,8 +9,8 @@ on:
 permissions:
   actions: write
   contents: write
-  # packages: write
-  # issues: write
+  packages: write
+  issues: write
 
 jobs:
   release:
@@ -45,6 +45,6 @@ jobs:
         id: workflow
         uses: Mattraks/delete-workflow-runs@v2
         with:
-          retain_days: 30
+          retain_days: 1
           keep_minimum_runs: 1
 
