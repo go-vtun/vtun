@@ -12,7 +12,7 @@ require (
 	github.com/pion/dtls/v2 v2.2.12
 	github.com/quic-go/quic-go v0.48.2
 	github.com/refraction-networking/utls v1.6.7
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	github.com/xtaci/kcp-go v5.4.20+incompatible
 	golang.org/x/crypto v0.29.0
 	golang.org/x/net v0.31.0
