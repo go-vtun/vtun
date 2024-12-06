@@ -18,7 +18,7 @@ require (
 	golang.org/x/net v0.31.0
 	google.golang.org/grpc v1.68.0
 	google.golang.org/protobuf v1.35.2
-	tailscale.com v1.76.6
+	tailscale.com v1.78.1
 )
 
 require (
@@ -35,7 +35,7 @@ require (
 	github.com/google/pprof v0.0.0-20240409012703-83162a5b38cd // indirect
 	github.com/josharian/native v1.1.1-0.20230202152459-5c7d0dd6ab86 // indirect
 	github.com/jsimonetti/rtnetlink v1.4.0 // indirect
-	github.com/klauspost/compress v1.17.4 // indirect
+	github.com/klauspost/compress v1.17.11 // indirect
 	github.com/klauspost/cpuid/v2 v2.1.1 // indirect
 	github.com/klauspost/reedsolomon v1.11.8 // indirect
 	github.com/mdlayher/netlink v1.7.2 // indirect
