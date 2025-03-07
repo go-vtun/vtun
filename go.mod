@@ -4,7 +4,7 @@ go 1.23.2
 
 require (
 	github.com/gobwas/ws v1.4.0
-	github.com/golang/snappy v0.0.4
+	github.com/golang/snappy v1.0.0
 	github.com/inhies/go-bytesize v0.0.0-20210819104631-275770b98743
 	github.com/net-byte/go-gateway v0.0.2
 	github.com/net-byte/water v0.0.9
