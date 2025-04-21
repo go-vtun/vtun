@@ -16,7 +16,7 @@ require (
 	github.com/xtaci/kcp-go v5.4.20+incompatible
 	golang.org/x/crypto v0.37.0
 	golang.org/x/net v0.39.0
-	google.golang.org/grpc v1.71.1
+	google.golang.org/grpc v1.72.0
 	google.golang.org/protobuf v1.36.6
 	tailscale.com v1.80.3
 )
