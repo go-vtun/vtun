@@ -1,6 +1,6 @@
 module github.com/go-vtun/vtun
 
-go 1.24
+go 1.24.1
 
 require (
 	github.com/gobwas/ws v1.4.0
