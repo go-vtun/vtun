@@ -11,7 +11,7 @@ require (
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pion/dtls/v2 v2.2.12
 	github.com/quic-go/quic-go v0.54.0
-	github.com/refraction-networking/utls v1.7.3
+	github.com/refraction-networking/utls v1.8.0
 	github.com/stretchr/testify v1.10.0
 	github.com/xtaci/kcp-go v5.4.20+incompatible
 	golang.org/x/crypto v0.40.0
@@ -24,7 +24,6 @@ require (
 require (
 	github.com/alexbrainman/sspi v0.0.0-20231016080023-1a75b4708caa // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
-	github.com/cloudflare/circl v1.5.0 // indirect
 	github.com/coder/websocket v1.8.12 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dblohm7/wingoes v0.0.0-20240119213807-a09d6be7affa // indirect
