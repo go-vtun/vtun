@@ -1,6 +1,6 @@
 module github.com/go-vtun/vtun
 
-go 1.24.1
+go 1.24.4
 
 require (
 	github.com/gobwas/ws v1.4.0
@@ -18,7 +18,7 @@ require (
 	golang.org/x/net v0.42.0
 	google.golang.org/grpc v1.74.2
 	google.golang.org/protobuf v1.36.6
-	tailscale.com v1.84.3
+	tailscale.com v1.86.2
 )
 
 require (
